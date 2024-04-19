@@ -8,7 +8,7 @@ declare module "react-native-maps-directions" {
 
   import * as React from "react";
 
-  export type MapDirectionsLegs =[
+  export type MapDirectionsLegs = [
     {
       distance: {
         text: string,
@@ -69,29 +69,26 @@ declare module "react-native-maps-directions" {
     waypointOrder: [[number]]
   }
 
-
-
-
   export type MapViewDirectionsOrigin =
     | string
     | {
-        latitude: number;
-        longitude: number;
-      };
+      latitude: number;
+      longitude: number;
+    };
 
   export type MapViewDirectionsWaypoints =
     | string
     | {
-        latitude: number;
-        longitude: number;
-      };
+      latitude: number;
+      longitude: number;
+    };
 
   export type MapViewDirectionsDestination =
     | string
     | {
-        latitude: number;
-        longitude: number;
-      };
+      latitude: number;
+      longitude: number;
+    };
 
   export type MapViewDirectionsMode =
     | "DRIVING"
@@ -104,8 +101,8 @@ declare module "react-native-maps-directions" {
     | "low";
 
   export type MapViewDirectionsTimePrecision =
-      | "now"
-      | "none";
+    | "now"
+    | "none";
 
   export interface MapViewDirectionsProps {
     /**
